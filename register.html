@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="login_register_page">
+    <form class="login_register_form">
+      <h1 class="form_title">Create new account</h1>
+      <input
+        type="text"
+        placeholder="First name"
+        id="register_fname"
+        class="input"
+      />
+
+      <p id="register_err1" style="display: none" class="margin"></p>
+
+      <input
+        type="text"
+        placeholder="Last name"
+        id="register_lname"
+        class="input"
+      />
+
+      <p id="register_err2" style="display: none" class="margin"></p>
+
+      <input
+        type="email"
+        placeholder="Email address"
+        id="register_email"
+        class="input"
+      />
+
+      <p id="register_err3" style="display: none" class="margin"></p>
+
+      <input
+        type="password"
+        placeholder="Password"
+        id="register_pass"
+        class="input"
+      />
+
+      <p id="register_err4" style="display: none" class="margin"></p>
+
+      <input
+        type="password"
+        placeholder="Confirm password"
+        id="register_pass_confirm"
+        class="input"
+      />
+
+      <p id="register_err5" style="display: none" class="margin"></p>
+
+      <label class="checkbox">
+        <input type="checkbox" id="register_terms" />
+        <span>I agree to the terms.</span>
+      </label>
+
+      <p id="register_err6" style="display: none" class="margin"></p>
+
+      <button
+        type="button"
+        class="button"
+        id="register_submit"
+        onclick="handleSubmitRegisterForm()"
+      >
+        Register
+      </button>
+
+      <p>Have an account? <a href="login.html">Log in!</a></p>
+    </form>
+    <script src="js/app.js"></script>
+  </body>
+</html>
